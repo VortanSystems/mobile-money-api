@@ -1,0 +1,20 @@
+This page initiates the donation
+
+<form action="https://naweri.com/api_request/" method="post" enctype="multipart/form-data">
+<input type="text" class="form-control" placeholder="merchant email" name="merchant" value="merchant@domain.com"><!--Your Merchant Email Here-->
+<input type="text" name="useremail" value="customer@example.com">
+<input type="text" name="username" value="Naweri Clinton">
+<input type="text" name="userphone" value="+256751021147">
+<input type="text" class="form-control" placeholder="itemname" name="itemname" value="Item Name">
+<input type="text" class="form-control" placeholder="itemid" name="itemid" value="Item ID e.g 1" >
+<input type="text" class="form-control" placeholder="price" name="amount" value="3500"><!--must be greater than or equal to one dollar-->
+
+<input type="text" class="form-control" name="itemdescription" value="Short Item description">
+<input type="text" name="currency" value="UGX"> <!--USD or UGX-->
+<input type="text" name="initdeposit"> <!--Do Not Change Here-->
+<input type="text" class="form-control" name="successurl" value="https://yourdomain.com/success.html"> <!--if you intend to verify the payment via API Key, Please redirect to a verify.php page. however, transaction is already successful-->
+<input type="text" class="form-control" name="failedurl" value="https://yourdomain.com/failed.html">
+<button class="btn btn-blok btn-outline-warning" name="pictonapay" type="submit">
+  Pay With Naweri Wallet
+</button>
+</form>
